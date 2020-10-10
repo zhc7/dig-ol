@@ -1974,6 +1974,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node-persist@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@types/node-persist@npm:3.1.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: 3f601c35505c74a6d2e178cc9cc5d218fe91570f376ff586e0d6d46803182eb7d3c5273b4ced18f4e70161106253874bed9f90e9fe2960a0c1033b09b1bfbf3d
+  languageName: node
+  linkType: hard
+
 "@types/node-sass@npm:^4.11.1":
   version: 4.11.1
   resolution: "@types/node-sass@npm:4.11.1"
@@ -5590,7 +5599,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:^4.16.3":
+"express@npm:^4.16.3, express@npm:^4.17.1":
   version: 4.17.1
   resolution: "express@npm:4.17.1"
   dependencies:
@@ -8399,6 +8408,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"node-persist@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "node-persist@npm:3.1.0"
+  checksum: c0cb2ec59d56d7760b6efdbb553511009cd40ce4709c27e7f29b7eee1318572a346031879f732c932b496d47fa406d657a4b7717e4411f9ab031a70fb62e9443
+  languageName: node
+  linkType: hard
+
 "node-releases@npm:^1.1.61":
   version: 1.1.61
   resolution: "node-releases@npm:1.1.61"
@@ -10914,6 +10930,17 @@ fsevents@~2.1.2:
   checksum: 8bbbf852cf1c91b6d9d54db1bb4ab310fa3daecc72bae733822bd0048dfe8554cafcdeecbb7c903a6877a45a6fcb1f72ac7b167830acc351c73a7fca8ac68188
   languageName: node
   linkType: hard
+
+"server-fb7daa@workspace:server":
+  version: 0.0.0-use.local
+  resolution: "server-fb7daa@workspace:server"
+  dependencies:
+    "@nuxt/types": ^2.14.6
+    "@types/node-persist": ^3.1.0
+    express: ^4.17.1
+    node-persist: ^3.1.0
+  languageName: unknown
+  linkType: soft
 
 "set-blocking@npm:~2.0.0":
   version: 2.0.0

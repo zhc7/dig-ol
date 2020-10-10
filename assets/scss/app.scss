@@ -1,0 +1,8 @@
+// Import dark theme variables
+@import "~bootswatch/dist/darkly/variables";
+@import "variables";
+
+// Import libraries
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/darkly/bootswatch";
+@import "~bootstrap-vue/src/index";
