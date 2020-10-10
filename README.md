@@ -1,20 +1,13 @@
-# dig-ol
+# Dig! OL
 
-## Build Setup
+清华附中 C16 / G19 著名多人即时对战游戏“掘”的在线版本
 
-```bash
-# install dependencies
-$ yarn install
+## Development Status
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+此项目正在开发中，待第一个版本 `0.1.0-alpha.1` 发布后 *（版本号遵循 [Semantic Versioning 2.0.0](https://semver.org/) 规范）* ，将在 G19 内部进行开放测试。
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+若你也对相关开发有兴趣，可以遵循 [此文档](CONTRIBUTING.md) 指引贡献代码。
 
-# generate static project
-$ yarn generate
-```
+## Author
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+此项目由 [JingBh](https://github.com/JingBh) 开发和维护，游戏规则来自清华附中 G19。
