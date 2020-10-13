@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "IAction": {
+      "properties": {
+        "cost": {
+          "anyOf": [
+            {
+              "additionalItems": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              },
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "minItems": 2,
+              "type": "array"
+            },
+            {
+              "items": {
+                "additionalItems": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ]
+                },
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "minItems": 2,
+                "type": "array"
+              },
+              "type": "array"
+            }
+          ],
+          "description": "Costs of the action.\n\nUse negative numbers to represent adding resources.\n\nIf an array is provided, the first item affects the player himself,\nthe rest affects the *target* (See explainations below) selected."
+        },
+        "defends": {
+          "description": "Defines which actions can this action defend.\n\nLeave this to `null` if nothing can be defended with this action.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "name": {
+          "description": "Name of the action.\n\nFor actions, names are identifiers.\nSo please make sure all the names are unique.",
+          "type": "string"
+        },
+        "target": {
+          "description": "Defines the target(s) of this action.\n\n`self`: Only affects the player himself.\n\n`select-enemy`: Allow the player to select an anemy as a target.\n\n`select-all`: Allow the player to select any player (including himself) as a target.\n\n`all-enemy`: Affects all enemies.\n\n`all`: Affects all players (including himself).",
+          "enum": [
+            "all",
+            "all-enemy",
+            "select-all",
+            "select-enemy",
+            "self"
+          ],
+          "type": "string"
+        },
+        "type": {
+          "description": "Type of the action.\n\n`res`: To add or subtract resources.\n\n`atk`: To attack the *target* (See explainations below).\n\n`def`: To defend an attack.",
+          "enum": [
+            "atk",
+            "def",
+            "res"
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "description": "Action set definition, it defines the resources' name and actions in the game.\nPlayers may be able to submit custom action sets in the future.\n\nFor example, see the `base` action set. It's the original 'Dig!' rules.",
+  "properties": {
+    "actions": {
+      "items": {
+        "$ref": "#/definitions/IAction"
+      },
+      "type": "array"
+    },
+    "author": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "description": "Unique identifier.",
+      "type": "string"
+    },
+    "name": {
+      "description": "Display name.",
+      "type": "string"
+    },
+    "resources": {
+      "description": "Names of all the resources available.\n\nFor resources, names are identifiers.\nSo please make sure all the names are unique.",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "respawn": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/IAction"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "An special action to automatically execute when player is dead.\nIf the execution is successful, the player will respawn."
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}
