@@ -4748,10 +4748,12 @@ __metadata:
     eslint: ^7.10.0
     eslint-plugin-nuxt: ^1.0.0
     nuxt: ^2.14.6
+    nuxt-typed-vuex: ^0.1.22
     sass: ^1.27.0
     sass-loader: ^10.0.3
     vue-class-component: ^7.2.6
     vue-property-decorator: ^9.0.2
+    vuex-persist: ^3.1.3
   languageName: unknown
   linkType: soft
 
@@ -5917,6 +5919,13 @@ __metadata:
   version: 2.0.2
   resolution: "flatted@npm:2.0.2"
   checksum: a3e5fb71ad3c4f0661cd3899864812bcf3f64bdf6aa5f33f967c9c2a8a5f0c7219707e864c0602115fef40e093415f76a43e77afd0a86990904e2217ddb44eb4
+  languageName: node
+  linkType: hard
+
+"flatted@npm:^3.0.5":
+  version: 3.1.0
+  resolution: "flatted@npm:3.1.0"
+  checksum: 9afe453c0b3d138884b637b41b27f3822e3dd6e9d413c4c02029b14d7b8e2cf03d631bbfbef3196a2176882b333c84dd2f42b174d7e5022429c13583afda9a1f
   languageName: node
   linkType: hard
 
@@ -8542,6 +8551,19 @@ fsevents@~2.1.2:
   version: 1.0.1
   resolution: "number-is-nan@npm:1.0.1"
   checksum: 42251b2653a16f8b47639d93c3b646fff295a4582a6b3a2fc51a651d4511427c247629709063d19befbceb8a3db1a8e9f17016b3a207291e79e4bd1413032918
+  languageName: node
+  linkType: hard
+
+"nuxt-typed-vuex@npm:^0.1.22":
+  version: 0.1.22
+  resolution: "nuxt-typed-vuex@npm:0.1.22"
+  dependencies:
+    consola: ^2.15.0
+    normalize-path: ^3.0.0
+    typed-vuex: 0.1.22
+  peerDependencies:
+    "@nuxt/types": ^2.14.5
+  checksum: 78976d2cb342ef6079c1806cfe42b3974d58d7a637801db098be2547f3809e2935a35e7d7a3d8e9abbac836569ec18673a3938ff98f084d0ee2cd119bf36a905
   languageName: node
   linkType: hard
 
@@ -11942,6 +11964,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"typed-vuex@npm:0.1.22":
+  version: 0.1.22
+  resolution: "typed-vuex@npm:0.1.22"
+  peerDependencies:
+    vuex: ^3.5.1
+  checksum: f570db8fc5822ad55041a87366d6cae18115b07de73f37ec377c07aa47d9ee64e29f0a7a8f478425be89836eeaede807dfe5cbaf5b7f2147a33787d19df4a86b
+  languageName: node
+  linkType: hard
+
 "typedarray@npm:^0.0.6":
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
@@ -12437,6 +12468,18 @@ typescript@~4.0:
   version: 2.6.12
   resolution: "vue@npm:2.6.12"
   checksum: 92ed547e55a4b27a2a45aa9ab7ff5999f891dc9754562a37226dd190b323d9f99daec892dd8bd39786e404e6e065d808e165b1a0c127ce8d45fd1bde79ec7312
+  languageName: node
+  linkType: hard
+
+"vuex-persist@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "vuex-persist@npm:3.1.3"
+  dependencies:
+    deepmerge: ^4.2.2
+    flatted: ^3.0.5
+  peerDependencies:
+    vuex: ">=2.5"
+  checksum: 44007df05dc8819f5d55504a4c34bd905f19460954f0f8fe3e9e4c5bb32f9426a1659c944e97b88004d2b97c64970b0f23fd475ace74a2811628a484eac26d14
   languageName: node
   linkType: hard
 

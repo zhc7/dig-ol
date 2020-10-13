@@ -31,6 +31,7 @@ const config: NuxtConfig = {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    { src: '~/plugins/vuex-persist', mode: 'client' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -39,7 +40,9 @@ const config: NuxtConfig = {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    // https://typed-vuex.roe.dev/
+    'nuxt-typed-vuex'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -70,6 +73,12 @@ const config: NuxtConfig = {
       bootstrapVueCSS: false
     },
     componentPlugins: [
+      'ButtonPlugin',
+      'FormPlugin',
+      'FormGroupPlugin',
+      'FormInputPlugin',
+      'InputGroupPlugin',
+      'LayoutPlugin'
     ]
   },
 
