@@ -1862,6 +1862,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cookie@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@types/cookie@npm:0.4.0"
+  checksum: be9ef4172b97878fe38874c47d25bddcc58886fa4e621b3336bf2e08983763b5391a0d0b4ace34372adc3bd44da05ea9bcf885b0f5b5ab56bc72e0baba5e6346
+  languageName: node
+  linkType: hard
+
 "@types/eslint-visitor-keys@npm:^1.0.0":
   version: 1.0.0
   resolution: "@types/eslint-visitor-keys@npm:1.0.0"
@@ -1934,6 +1941,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 9f5ba01f1031010f686f628d1b7f8b0989cd0562436675eff13f944ae2ffbaa90be0d2a7f89a6caf5763e00822080ae28c58ce0e1cde138322decb636641e568
+  languageName: node
+  linkType: hard
+
+"@types/js-cookie@npm:^2.2.6":
+  version: 2.2.6
+  resolution: "@types/js-cookie@npm:2.2.6"
+  checksum: 08d3a2a014d2b7fd97070b5e5039f2ca387f07b9ecc13cfa85040479e7adbd62087901bd8adf94b2afad96457652996d1f051282ad3d4677a7ae1b6bf87a640f
   languageName: node
   linkType: hard
 
@@ -4107,7 +4121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cookie@npm:^0.4.0":
+"cookie@npm:^0.4.0, cookie@npm:^0.4.1":
   version: 0.4.1
   resolution: "cookie@npm:0.4.1"
   checksum: b8e0928e3e7aba013087974b33a6eec730b0a68b7ec00fc3c089a56ba2883bcf671252fc2ed64775aa1ca64796b6e1f6fdddba25a66808aef77614d235fd3e06
@@ -4740,20 +4754,24 @@ __metadata:
     "@nuxtjs/eslint-config-typescript": ^3.0.0
     "@nuxtjs/eslint-module": ^2.0.0
     "@nuxtjs/pwa": ^3.0.2
+    "@types/cookie": ^0.4.0
+    "@types/js-cookie": ^2.2.6
     babel-eslint: ^10.1.0
     bootstrap: ^4.5.2
     bootstrap-vue: ^2.17.3
     bootswatch: ^4.5.2
+    cookie: ^0.4.1
     core-js: ^3.6.5
     eslint: ^7.10.0
     eslint-plugin-nuxt: ^1.0.0
+    js-cookie: ^2.2.1
     nuxt: ^2.14.6
     nuxt-typed-vuex: ^0.1.22
     sass: ^1.27.0
     sass-loader: ^10.0.3
     vue-class-component: ^7.2.6
     vue-property-decorator: ^9.0.2
-    vuex-persist: ^3.1.3
+    vuex-persistedstate: ^4.0.0-beta.1
   languageName: unknown
   linkType: soft
 
@@ -5919,13 +5937,6 @@ __metadata:
   version: 2.0.2
   resolution: "flatted@npm:2.0.2"
   checksum: a3e5fb71ad3c4f0661cd3899864812bcf3f64bdf6aa5f33f967c9c2a8a5f0c7219707e864c0602115fef40e093415f76a43e77afd0a86990904e2217ddb44eb4
-  languageName: node
-  linkType: hard
-
-"flatted@npm:^3.0.5":
-  version: 3.1.0
-  resolution: "flatted@npm:3.1.0"
-  checksum: 9afe453c0b3d138884b637b41b27f3822e3dd6e9d413c4c02029b14d7b8e2cf03d631bbfbef3196a2176882b333c84dd2f42b174d7e5022429c13583afda9a1f
   languageName: node
   linkType: hard
 
@@ -11032,6 +11043,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"shvl@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "shvl@npm:2.0.1"
+  checksum: 86514e1393643ae718b56e1f2e9d01165b4bef55768f6a0954c92d24dacf91da6182b5e2fd2fdfc99b7904d0fa2b32861d7dbdfa07929578f02f6848bb7f3420
+  languageName: node
+  linkType: hard
+
 "signal-exit@npm:^3.0.0, signal-exit@npm:^3.0.2, signal-exit@npm:^3.0.3":
   version: 3.0.3
   resolution: "signal-exit@npm:3.0.3"
@@ -12471,15 +12489,16 @@ typescript@~4.0:
   languageName: node
   linkType: hard
 
-"vuex-persist@npm:^3.1.3":
-  version: 3.1.3
-  resolution: "vuex-persist@npm:3.1.3"
+"vuex-persistedstate@npm:^4.0.0-beta.1":
+  version: 4.0.0-beta.1
+  resolution: "vuex-persistedstate@npm:4.0.0-beta.1"
   dependencies:
     deepmerge: ^4.2.2
-    flatted: ^3.0.5
+    shvl: ^2.0.0
   peerDependencies:
-    vuex: ">=2.5"
-  checksum: 44007df05dc8819f5d55504a4c34bd905f19460954f0f8fe3e9e4c5bb32f9426a1659c944e97b88004d2b97c64970b0f23fd475ace74a2811628a484eac26d14
+    vue: ^2.0 || ^3.0
+    vuex: ^3.0 || ^4.0
+  checksum: c461957c6366f5c2061110039b98650178bb337e8bf68a74e373ca6d86a0a508162cac15b87a972d6e83d20efc355484c9044f464225ecbd9141209ec7887955
   languageName: node
   linkType: hard
 

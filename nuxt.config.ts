@@ -31,7 +31,7 @@ const config: NuxtConfig = {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '~/plugins/vuex-persist', mode: 'client' }
+    '~/plugins/persistedState.ts'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -78,7 +78,8 @@ const config: NuxtConfig = {
       'FormGroupPlugin',
       'FormInputPlugin',
       'InputGroupPlugin',
-      'LayoutPlugin'
+      'LayoutPlugin',
+      'OverlayPlugin'
     ]
   },
 
